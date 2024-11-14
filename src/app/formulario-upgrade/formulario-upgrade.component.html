@@ -1,0 +1,114 @@
+<div class="position-relative overflow-hidden vh-100">
+    <div class="img-cover img-fluid z-0 position-absolute top-0 start-0 w-100 h-100">
+        <img src="https://imagenes.upgrade.com.pe/Banners/EXPO_TEC_UPGRADE.webp" alt="EXPO-TEC Upgrade" class="img-cover">
+    </div>
+    <div class="container my-5 position-relative content-scroll">
+        <div class="py-2 mt-2 mb-1">
+            <!-- <div class="text-primary h1 fw-bold"><p class="h5">Grupo<strong class="h1 fw-bolder"> Upgrade</strong> presenta:</p></div> -->
+            <img class="w-25" src="https://imagenes.upgrade.com.pe/Logos/logoblancoUPGRADE.webp" alt="">
+        </div>
+        <div class="row py-4 ">
+            <div class="col-md-6">
+               <div class="d-flex align-items-center justify-content-center">
+                  <div class="mt-5">
+                   <div>
+                    <p class="text-white fw-light h5">El evento más grande de tecnología y transformación digital</p>
+                    <p class="display-2 fw-bold text-white ">EXPO-TEC <strong class="fontSecondary">UPGRADE</strong> 2024 </p>
+                    <!-- <p class="h2 fw-bolder text-primary"><span class="bg-white rounded-4 fw-bolder px-2 text-primary">📌 Regístrate ahora</span>  y asegura tu lugar en este evento único de tecnología y soluciones inteligentes!</p> -->
+                </div>
+                  <div class="mt-4 pt-5">
+                      <p class="fontSecondary  fw-bolder h4">Fecha: <span class="text-white">5 y 6 de diciembre de 2024</span></p> 
+                      <p class="fontSecondary  fw-bolder h4"> Lugar: <a href="" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover  text-white">
+                        Auditorio Santa Maria - UCSM Arequipa</a></p>
+                      <p class="fw-light h4 text-white mt-4 pt-2">Asegura tu lugar en este evento único y participa en
+                            talleres exclusivos con   <a href="" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover  text-white fw-bold">
+                                certificación gratuita.</a></p>
+                        
+                    </div>
+                   </div>
+                  </div>   
+            </div>
+            <div class="col-md-6 mt-4">
+              <div class="d-flex flex-column align-items-start justify-content-center">
+              <div class="w-100">
+                  <mat-form-field class="example-form-field w-100">
+                      <mat-label>Nombre</mat-label>
+                      <input matInput type="text" >
+                    </mat-form-field>
+                 
+                  
+              </div>
+              <div class="w-100">
+                  <mat-form-field class="example-form-field w-100">
+                      <mat-label>Apellidos</mat-label>
+                      <input matInput type="text" >
+                    </mat-form-field>
+                 
+                  
+              </div>
+              <div class="w-100">
+                  <form class="example-form w-100">
+                      <mat-form-field class="example-full-width w-100">
+                        <mat-label>Teléfono</mat-label>
+                        <span matTextPrefix>+51 &nbsp;</span>
+                        <input type="tel" matInput placeholder="912-345-678">
+                        <mat-icon matSuffix>mode_edit</mat-icon>
+                      </mat-form-field>
+                    </form>
+              </div>
+              <div class="w-100">
+                  <mat-form-field class="example-form-field w-100">
+                      <mat-label>DNI</mat-label>
+                      <input matInput type="text" >
+                    </mat-form-field>
+              </div>
+              <div class="w-100">
+                   <form class="example-form w-75 w-100">
+                  <mat-form-field class="example-full-width w-100">
+                    <mat-label>Email</mat-label>
+                    <input type="email" matInput [formControl]="emailFormsControl" placeholder="Ex. pat@example.com">
+                    @if (emailFormsControl.hasError('email') && !emailFormsControl.hasError('required')) {
+                      <mat-error>Please enter a valid email address</mat-error>
+                    }
+                    @if (emailFormsControl.hasError('required')) {
+                      <mat-error>Ingrese un correo<strong> correcto</strong></mat-error>
+                    }
+                  </mat-form-field>
+                </form>
+              </div>
+              <div class="w-100">
+                  <mat-form-field class="example-form-field w-100">
+                      <mat-label>Profesión / Ocupación</mat-label>
+                      <input matInput type="text" >
+                    </mat-form-field>
+              </div>
+             
+             <div class="w-100">
+                <button (click)="service.setAllUsuarios()"><input class="btn buttom w-100 text-white " type="button" value="Enviar"></button>
+             </div>
+              </div>
+            
+          </div>
+          <div class=" rounded-4">
+            <div class="d-flex flex-column justify-content-center align-items-center m-5">
+              <div>
+              <p class="display-6 fw-bolder text-white">Síguenos en nuestros Canales de Comunicación:</p>
+              </div>
+             <div class="text-white d-flex justify-content-between align-items-center gap-5 h1">
+              <a href="" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-white" ><i class="bi bi-facebook"></i></a>
+              <a href="" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-white"><i class="bi bi-instagram"></i></a>
+              <a href="" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-white"><i class="bi bi-tiktok"></i></a>
+              <a href="" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-white"><i class="bi bi-youtube"></i></a>
+              <a href="" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-white"><i class="bi bi-whatsapp"></i></a>
+         
+             </div>
+            </div>
+            
+          </div>
+        </div>
+       
+       
+      
+    </div>
+      
+</div>

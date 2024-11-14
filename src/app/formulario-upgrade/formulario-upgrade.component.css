@@ -1,0 +1,28 @@
+.img-cover {
+    object-fit: cover; /* Ajustar la imagen para cubrir todo el contenedor */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Asegura que esté detrás del contenido */
+}.position-relative.overflow-hidden {
+    overflow: hidden;
+}
+.vh-100 {
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    overflow-y: auto; /* Activa el scroll vertical */
+    position: relative;
+}
+
+.content-scroll {
+    max-height: 100vh; /* Limita la altura para que no exceda la pantalla */
+    overflow-y: auto; /* Permite el scroll vertical si el contenido excede la altura */
+    padding-bottom: 20px; /* Espacio extra al final para evitar que el contenido se corte */
+}
+.fontSecondary{
+    color: #00D0FF;
+}
+.buttom{
+    background-color: #1135c7;
+}
