@@ -8,17 +8,17 @@ import { clientes } from './clientes';
   providedIn: 'root'
 })
 export class FormularioUpgradeService {
-      public url = 'http://192.168.1.38:3000/'
-      constructor( private http: HttpClient) { }
-      setAllUsuarios(){
-        let url = this.url + 'http://192.168.1.38:3000/clientes'
-        return this.http
-        .post<clientes>(url,{})
-        .pipe(
-          catchError((error) => {
-            console.error('Error en la petición HTTP:', error);
-            return throwError(() => new Error('Error en la petición HTTP'))
-          })
-        )
-      }
+      // public url = 'http://192.168.1.38:3000/'
+      // constructor( private http: HttpClient) { }
+      // setAllUsuarios(){
+      //   let url = this.url + 'http://192.168.1.38:3000/clientes'
+      //   return this.http
+      //   .post<clientes>(url,{})
+      //   .pipe(
+      //     catchError((error) => {
+      //       console.error('Error en la petición HTTP:', error);
+      //       return throwError(() => new Error('Error en la petición HTTP'))
+      //     })
+      //   )
+      // }
       }
