@@ -32,7 +32,8 @@ public  nuevoUsuario: Usuario  = {
   phone: '',
   dni: '',
   email: '',
-  profesion: ''
+  profesion: '',
+  cargo: ''
 }
   constructor(private usuarioService : FormularioUpgradeService){}
 
@@ -48,7 +49,7 @@ public  nuevoUsuario: Usuario  = {
       })
    }
    setClientes(): void {
-     if(this.nuevoUsuario.dni && this.nuevoUsuario.email  && this.nuevoUsuario.name && this.nuevoUsuario.phone && this.nuevoUsuario.profesion && this.nuevoUsuario.id_){
+     if(this.nuevoUsuario.dni && this.nuevoUsuario.email  && this.nuevoUsuario.name && this.nuevoUsuario.phone && this.nuevoUsuario.profesion && this.nuevoUsuario.cargo){
       this.usuarioService.setCliente(this.nuevoUsuario).subscribe
       (response => {
         alert('Datos enviados correctamente');
@@ -60,8 +61,8 @@ public  nuevoUsuario: Usuario  = {
           phone: '',
           dni: '',
           email: '',
-          profesion: ''
-          
+          profesion: '',
+          cargo: ''
         };
       }, error => {
         console.error('Error al enviar datos', error);

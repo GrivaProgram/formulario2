@@ -5,5 +5,6 @@ export interface Usuario {
     phone: string,
     dni: string,
     email:string,
-    profesion: string
+    profesion: string,
+    cargo: string
 }
