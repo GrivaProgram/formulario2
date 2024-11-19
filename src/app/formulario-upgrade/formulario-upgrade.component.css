@@ -30,6 +30,7 @@
     width: 25%;
 }
 @media (max-width: 768px) {
+
     .custom-image {
       text-align: center;
         width: 75%; /* Cambia el tamaño al 50% en móviles */

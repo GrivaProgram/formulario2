@@ -1,7 +1,7 @@
-export interface clientes {
+export interface Usuario {
     id_: string,
-    name: string,
     surname: string,
+    name: string,
     phone: string,
     dni: string,
     email:string,
